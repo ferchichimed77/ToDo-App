@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
   //Appel du service de login
   onLogin(loginForm: NgForm) {
-    //this.userService.loginUser(loginForm.toString());
+    this.userService.loginUser(loginForm.value);
   }
   //redirection vers la page register
   onRegister() {
