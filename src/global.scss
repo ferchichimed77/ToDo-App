@@ -1,0 +1,85 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+// Apply to all
+.img-bg{
+    padding: 1px;
+    height: 100%;
+    width : 100%;
+    background-image: url('./assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text-form-header{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.grid-layout{
+    margin-top: 100px;
+}
+.margin-button{
+    margin-top: 50px;  
+}
+
+//Login component
+.register-button-right{
+    margin-top: 180px;
+    text-align: right;
+    justify-content: right;
+}
+
+//To do component
+.text-todo-header{
+    margin-left: 8px;
+    color: white;
+    font-weight: bold;
+}
+.card-todo{
+    margin-top: 10px;
+}
+
+//Logout icon
+.logout-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color:red;
+}
+
+//error messages 
+.alert-errors {
+    font-size: small;
+    color: #fff;
+    background: var(--ion-color-danger);
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
