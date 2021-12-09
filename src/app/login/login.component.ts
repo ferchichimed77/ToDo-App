@@ -12,10 +12,11 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router, private userService: UserAuthService) {}
 
   ngOnInit() {}
-
+  //Appel du service de login
   onLogin(loginForm: NgForm) {
     this.userService.loginUser(loginForm.value);
   }
+  //redirection vers la page register
   onRegister() {
     this.router.navigate(['register']);
   }
